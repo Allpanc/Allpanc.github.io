@@ -153,17 +153,21 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 window.onload = function(){
-  console.debug("Hello");
   setLocalization();
 };
 
-var currentLanguage = "ru";
+var currentLanguage = "en";
 
 // Function to set localization at the start
 function setLocalization() {
 
   // Call select_language with user's preferred language or default language
-  select_language(currentLanguage);
+  var userLang = navigator.language || navigator.userLanguage;
+  var langCode = userLang[0]+userLang[1];
+  if (langCode != "en" && langCode!="ru"){
+    userLang = currentLanguage;
+  }
+  select_language(userLang);
 
   // Ensure localization resources are loaded
   // (e.g., by fetching translation files asynchronously)
@@ -171,10 +175,13 @@ function setLocalization() {
 
 function select_language(language) {
   $("[lang]").each(function () {
-      if ($(this).attr("lang") == language)
-          $(this).show();
-      else
-          $(this).hide();
+      var langCode = language[0]+language[1];
+      if (langCode == $(this).attr("lang")){
+        $(this).show();
+      }
+      else{
+        $(this).hide();
+      }
   });
 }
 

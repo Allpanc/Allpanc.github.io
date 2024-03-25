@@ -316,7 +316,7 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 60px;
   max-height: 112px;
   overflow: hidden;
@@ -401,6 +401,7 @@ main {
 .info_more-btn span { display: none; }
 
 .info_lang-btn {
+  visibility: hidden;
   border: 1px solid var(--orange-yellow-crayola);
   position: absolute;
   top: 10px;
