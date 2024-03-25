@@ -49,10 +49,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
 }
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
-
 
 
 // custom select variables
@@ -60,8 +56,6 @@ const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-select.addEventListener("click", function () { elementToggleFunc(this); });
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
@@ -157,3 +151,40 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+window.onload = function(){
+  console.debug("Hello");
+  setLocalization();
+};
+
+var currentLanguage = "ru";
+
+// Function to set localization at the start
+function setLocalization() {
+
+  // Call select_language with user's preferred language or default language
+  select_language(currentLanguage);
+
+  // Ensure localization resources are loaded
+  // (e.g., by fetching translation files asynchronously)
+}
+
+function select_language(language) {
+  $("[lang]").each(function () {
+      if ($(this).attr("lang") == language)
+          $(this).show();
+      else
+          $(this).hide();
+  });
+}
+
+var langButton = document.getElementById("langButton")
+langButton.addEventListener("click", function (){
+  if (currentLanguage == "ru"){
+    currentLanguage = "en";
+  }
+  else{
+    currentLanguage = "ru";
+  }
+  select_language(currentLanguage);
+});

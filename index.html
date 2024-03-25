@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
@@ -36,6 +37,10 @@
     <!--
       - #SIDEBAR
     -->
+    <button class="info_lang-btn" id ="langButton">
+      <span lang="en">En</span>
+      <span lang="ru">Ru</span>
+    </button>
 
     <aside class="sidebar" data-sidebar>
 
@@ -46,20 +51,50 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Aleksandr Panchenko">Aleksandr Panchenko</h1>
+          <h1 lang="en" class="name" title="Aleksandr Panchenko">Aleksandr Panchenko</h1>
+          <h1 lang="ru" class="name" title="Aleksandr Panchenko">Александр Панченко</h1>
 
-          <p class="title">Unity developer</p>
+          <p lang="en" class="title">Unity developer</p>
+          <p lang="ru" class="title">Unity разработчик</p>
+
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span lang="en">Show Contacts</span>
+          <span lang="ru">Контакты</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
-
       </div>
 
       <div class="sidebar-info_more">
+
+        
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://t.me/Alpanch" class="social-link">
+              <img src="./assets/images/icon-telegram.svg" width="25px"></img>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://vk.com/allpanc" class="social-link">
+              <img src="./assets/images/icon-vk.svg" width="25px"></img>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Allpanc" class="social-link">
+              <img src="./assets/images/icon-github.svg" width="25px"></img>
+            </a>
+          </li>
+
+        </ul>
+
+
 
         <div class="separator"></div>
 
@@ -86,7 +121,8 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p lang="en" class="contact-title">Birthday</p>
+              <p lang="ru" class="contact-title">День рождения</p>
 
               <time datetime="2001-06-14">June 14, 2001</time>
             </div>
@@ -100,35 +136,13 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p lang="en" class="contact-title">Location</p>
+              <p lang="ru" class="contact-title">Локация</p>
 
-              <address>Khabarovsk, Russia</address>
+              <address lang="en">Khabarosvk, Russia</address>
+              <address lang="ru">Хабаровск, Россия</address>
             </div>
 
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://t.me/Alpanch" class="social-link">
-              <img src="./assets/images/icon-telegram.svg" width="25px"></img>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://vk.com/allpanc" class="social-link">
-              <img src="./assets/images/icon-vk.svg" width="25px"></img>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/Allpanc" class="social-link">
-              <img src="./assets/images/icon-github.svg" width="25px"></img>
-            </a>
           </li>
 
         </ul>
@@ -149,16 +163,26 @@
 
       <article class="about  active" data-page="about">
 
-        <header>
+        <header lang="en">
           <h2 class="h2 article-title">About me</h2>
         </header>
 
+        <header lang="ru">
+          <h2 class="h2 article-title">О себе</h2>
+        </header>
+
         <section class="about-text">
-          <p>
+          <p lang="en">
             I'm Junior+ Unity Developer working in mobile and web games development.
           </p>
-          <p>
+          <p lang="ru">
+            Я Джуниор+ Unity разработчик, в данный момент работаю над мобильными и веб играми.
+          </p>
+          <p lang="en">
             I enjoy creating exciting gaming experiences.
+          </p>
+          <p lang="ru">
+            Мне нравится создавать интересный игровой опыт.
           </p>
         </section>
 
@@ -169,7 +193,8 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 lang="en" class="h3 service-title">What i'm doing</h3>
+          <h3 lang="ru" class="h3 service-title">Что я делаю</h3>
 
           <ul class="service-list">
 
@@ -180,10 +205,15 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web games</h4>
+                <h4 lang="en" class="h4 service-item-title">Web games</h4>
+                <h4 lang="ru" class="h4 service-item-title">Веб игры</h4>
 
-                <p class="service-item-text">
+                <p lang="en" class="service-item-text">
                   Development of web-based games for Yandex Games.
+                </p>
+
+                <p lang="ru" class="service-item-text">
+                  Разработка веб игр для платформы Яндекс Игры.
                 </p>
               </div>
 
@@ -196,10 +226,14 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile games</h4>
+                <h4 lang="en" class="h4 service-item-title">Mobile games</h4>
+                <h4 lang="ru" class="h4 service-item-title">Мобильные игры</h4>
 
-                <p class="service-item-text">
+                <p lang="en" class="service-item-text">
                   Development of mobile games for Android.
+                </p>
+                <p lang="ru" class="service-item-text">
+                  Разработка мобильных игр для платформы Android.
                 </p>
               </div>
 
@@ -212,10 +246,14 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AR games</h4>
+                <h4 lang="en" class="h4 service-item-title">AR games</h4>
+                <h4 lang="ru" class="h4 service-item-title">AR игры</h4>
 
-                <p class="service-item-text">
+                <p lang="en" class="service-item-text">
                   Development of AR applications for Android.
+                </p>
+                <p lang="ru" class="service-item-text">
+                  Разработка AR приложений для платформы Android.
                 </p>
               </div>
 
@@ -228,10 +266,14 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Simulators</h4>
+                <h4 lang="en" class="h4 service-item-title">Simulators</h4>
+                <h4 lang="ru" class="h4 service-item-title">Симуляторы</h4>
 
-                <p class="service-item-text">
+                <p lang="en" class="service-item-text">
                   Development of training simulators for educational purposes.
+                </p>
+                <p lang="ru" class="service-item-text">
+                  Разработка игровых симуляторов для образовательных целей.
                 </p>
               </div>
 
@@ -242,7 +284,8 @@
         </section>
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 lang="en" class="h2 article-title">Portfolio</h2>
+          <h2 lang="ru" class="h2 article-title">Портфолио</h2>
         </header>
 
         <section class="projects">
@@ -260,9 +303,11 @@
                   <img src="./assets/images/icon-festu-2.jpg" alt="dsm." loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Locomotive assembly simulator</h3>
+                <h3 lang="en" class="project-title">Locomotive assembly simulator</h3>
+                <h3 lang="ru" class="project-title">Симулятор сборки локомотива</h3>
 
-                <p class="project-category">Simulators</p>
+                <p lang="en" class="project-category">Simulators</p>
+                <p lang="ru" class="project-category">Симуляторы</p>
 
               </a>
             </li>
@@ -278,9 +323,11 @@
                   <img src="./assets/images/icon-juicyFruit.png" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Juicy Fruit</h3>
+                <h3 lang="en" class="project-title">Juicy Fruit</h3>
+                <h3 lang="ru" class="project-title">Сочные фрукты</h3>
 
-                <p class="project-category">Web Games</p>
+                <p lang="en" class="project-category">Web Games</p>
+                <p lang="ru" class="project-category">Веб игры</p>
 
               </a>
             </li>
@@ -296,9 +343,11 @@
                   <img src="./assets/images/icon-russesVsLizards.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Russes vs Lizards: Eggfall</h3>
+                <h3 lang="en" class="project-title">Russes vs Lizards: Eggfall</h3>
+                <h3 lang="ru" class="project-title">Русы против Ящеров: Яйцепад</h3>
 
-                <p class="project-category">Web games</p>
+                <p lang="en" class="project-category">Web games</p>
+                <p lang="ru" class="project-category">Веб игры</p>
 
               </a>
             </li>
@@ -314,9 +363,11 @@
                   <img src="./assets/images/icon-tileFusion.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Tile Fusion</h3>
+                <h3 lang="en" class="project-title">Tile Fusion</h3>
+                <h3 lang="ru" class="project-title">Тающие Тайлы</h3>
 
-                <p class="project-category">Web Games</p>
+                <p lang="en" class="project-category">Web Games</p>
+                <p lang="ru" class="project-category">Веб игры</p>
 
               </a>
             </li>
@@ -334,7 +385,8 @@
 
                 <h3 class="project-title">GimaQuest</h3>
 
-                <p class="project-category">AR Games</p>
+                <p lang="en" class="project-category">AR Games</p>
+                <p lang="ru" class="project-category">AR игры</p>
 
               </a>
             </li>
@@ -350,9 +402,11 @@
                   <img src="./assets/images/icon-festu-3.jpg" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Railway Port Simulator</h3>
+                <h3 lang="en" class="project-title">Railway Port Simulator</h3>
+                <h3 lang="ru" class="project-title">Симулятор железнодорожного порта</h3>
 
-                <p class="project-category">Simulators</p>
+                <p lang="en" class="project-category">Simulators</p>
+                <p lang="ru" class="project-category">Симуляторы</p>
 
               </a>
             </li>
@@ -362,7 +416,8 @@
         </section>
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 lang="en" class="h2 article-title">Resume</h2>
+          <h2 lang="ru" class="h2 article-title">Резюме</h2>
         </header>
 
         <section class="timeline">
@@ -372,7 +427,8 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 lang="en" class="h3">Experience</h3>
+            <h3 lang="ru" class="h3">Опыт</h3>
           </div>
 
           <ol class="timeline-list">
@@ -381,9 +437,10 @@
 
               <h4 class="h4 timeline-item-title">VIR Group - Junior+ Unity Developer</h4>
 
-              <span>November 2022 — Present</span>
+              <span lang="en">November 2022 — Present</span>
+              <span lang="ru">Ноябрь 2022 — Текущее время</span>
 
-              <p class="timeline-text">
+              <p lang="en" class="timeline-text">
                 Developing web-based games for
                 <span style="display: inline-block;">
                   <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://yandex.ru/games/developer/44934">
@@ -392,15 +449,25 @@
                   Platform
               </p>
 
+              <p lang="ru" class="timeline-text">
+                Разработка веб игр для платформы
+                <span style="display: inline-block;">
+                  <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://yandex.ru/games/developer/44934">
+                    Яндекс Игры.
+                  </a></span>  
+              </p>
+
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Pet Project</h4>
+              <h4 lang="en" class="h4 timeline-item-title">Pet Project</h4>
+              <h4 lang="ru" class="h4 timeline-item-title">Личный проект</h4>
 
-              <span>January 2024 — February 2024</span>
+              <span lang="en">January 2024 — February 2024</span>
+              <span lang="ru">Январь 2024 — Февраль 2024</span>
 
-              <p class="timeline-text">
+              <p lang="en" class="timeline-text">
                 Creating web-based arcade game about
                 <span style="display: inline-block;">
                   <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://yandex.ru/games/app/294351?utm_source=app_page">
@@ -409,15 +476,25 @@
                   battle.
               </p>
 
+              <p lang="ru" class="timeline-text">
+                Разработка аркадной веб-игры о битве
+                <span style="display: inline-block;">
+                  <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://yandex.ru/games/app/294351?utm_source=app_page">
+                    Русов против Ящеров.
+                  </a></span>  
+              </p>
+
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Far Eastern State Transport University</h4>
+              <h4 lang="en" class="h4 timeline-item-title">Far Eastern State Transport University</h4>
+              <h4 lang="ru" class="h4 timeline-item-title">Дальневосточный государственный университет путей сообщения</h4>
 
-              <span>October 2023 — December 2023</span>
+              <span lang="en">October 2023 — December 2023</span>
+              <span lang="ru">Октябрь 2023 — Декабрь 2023</span>
 
-              <p class="timeline-text">
+              <p lang="en" class="timeline-text">
                 Developing multiplayer
                 <span style="display: inline-block;">
                   <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://umczdt.ru/news/onlayn-otkrytie-ii-molodezhnogo-mezhdunarodnogo-internet-lagerya-intertranscamp/">
@@ -426,18 +503,28 @@
                   for railway workers.
               </p>
 
+              <p lang="ru" class="timeline-text">
+                Разработка мультиплеерного
+                <span style="display: inline-block;">
+                  <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://umczdt.ru/news/onlayn-otkrytie-ii-molodezhnogo-mezhdunarodnogo-internet-lagerya-intertranscamp/">
+                    игрового симулятора
+                  </a></span>  
+                  для студентов железнодорожников.
+              </p>
+
             </li>
 
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title"> Renowned Games -  Unity Assets Developer</h4>
 
-              <span>June 2022 — November 2022</span>
+              <span lang="en">June 2022 — November 2022</span>
+              <span lang="ru">Июнь 2022 — Ноябрь 2022</span>
 
               <p class="timeline-text">
                 <ul style="list-style-type: circle;">
                   <li>
-                    <p class="timeline-text">
+                    <p lang="en" class="timeline-text">
                       Creating 
                       <span style="display: inline-block;">
                         <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://renownedgames.gitbook.io/ai-tree">
@@ -448,22 +535,50 @@
                         <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://assetstore.unity.com/packages/tools/behavior-ai/ai-tree-behavior-trees-for-unity-229578">
                           AI Tree
                         </a></span>.</p>
+
+                        <p lang="ru" class="timeline-text">
+                          Создание
+                          <span style="display: inline-block;">
+                            <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://renownedgames.gitbook.io/ai-tree">
+                              документации в GitBook
+                            </a></span>
+                          для 
+                          <span style="display: inline-block;">
+                            <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://assetstore.unity.com/packages/tools/behavior-ai/ai-tree-behavior-trees-for-unity-229578">
+                              AI Tree
+                            </a></span>.</p>
                   </li>
+
                   <li>
-                    <p class="timeline-text">
+                    <p lang="en" class="timeline-text">
                       Creating YouTube tutorials for 
                       <span style="display: inline-block;">
                         <a style="color:hsl(45, 54%, 58%); font-style:italic;  text-decoration: underline;" href="https://assetstore.unity.com/packages/tools/behavior-ai/ai-tree-behavior-trees-for-unity-229578">
                           AI Tree
                         </a></span>.</p>
+
+                        <p lang="ru" class="timeline-text">
+                          Создание обучающих YouTube видео для
+                          <span style="display: inline-block;">
+                            <a style="color:hsl(45, 54%, 58%); font-style:italic;  text-decoration: underline;" href="https://assetstore.unity.com/packages/tools/behavior-ai/ai-tree-behavior-trees-for-unity-229578">
+                              AI Tree
+                            </a></span>.</p>
                   </li>
+
                   <li>
-                    <p class="timeline-text">
+                    <p lang="en" class="timeline-text">
                       Creating YouTube tutorials for 
                       <span style="display: inline-block;">
                         <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://assetstore.unity.com/packages/tools/utilities/apex-editor-inspector-attributes-183345">
                           Apex Project
                         </a></span>.</p>
+
+                        <p lang="ru" class="timeline-text">
+                          Создание обучающих YouTube видео для
+                          <span style="display: inline-block;">
+                            <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://assetstore.unity.com/packages/tools/utilities/apex-editor-inspector-attributes-183345">
+                              Apex Project
+                            </a></span>.</p>
                   </li>
                 </ul>
                 
@@ -473,20 +588,35 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Pet Project</h4>
+              <h4 lang="en" class="h4 timeline-item-title">Pet Project</h4>
+              <h4 lang="ru" class="h4 timeline-item-title">Личный проект</h4>
 
-              <span>March 2022 — May 2022</span>
+              <span lang="en">March 2022 — May 2022</span>
+              <span lang="ru">Март 2022 — Май 2022</span>
 
-              <p class="timeline-text">
+              <p lang="en" class="timeline-text">
                 Developing
                 <span style="display: inline-block;">
                   <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://apps.rustore.ru/app/com.DefaultCompany.GimaQuest">
-                    AR Quest
+                    AR quest
                   </a></span>  
-                  for 
+                  for
                   <span style="display: inline-block;">
                     <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://27zoo.ru/">
-                      Khabarovsk Zoo
+                       Khabarovsk Zoo
+                    </a></span>.
+              </p>
+
+              <p lang="ru" class="timeline-text">
+                Разработка
+                <span style="display: inline-block;">
+                  <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://apps.rustore.ru/app/com.DefaultCompany.GimaQuest">
+                    AR квеста
+                  </a></span>  
+                  по зоосаду
+                  <span style="display: inline-block;">
+                    <a style="color:hsl(45, 54%, 58%); font-style:italic; text-decoration: underline;" href="https://27zoo.ru/">
+                       "Приамурский"
                     </a></span>.
               </p>
 
@@ -501,21 +631,24 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
   
-              <h3 class="h3">Courses</h3>
+              <h3 lang="en" class="h3">Courses</h3>
+              <h3 lang="ru" class="h3">Курсы</h3>
             </div>
   
             <ol class="timeline-list">
   
               <li class="timeline-item">
   
-                <h4 class="h4 timeline-item-title">K-Syndicate: Architecture Unity Games</h4>
+                <h4 lang="en" class="h4 timeline-item-title">K-Syndicate: Architecture Unity Games</h4>
+                <h4 lang="ru" class="h4 timeline-item-title">K-Syndicate: Архитектура мобильных игр на Unity</h4>
   
                 <span>2023</span>
               </li>
   
               <li class="timeline-item">
   
-                <h4 class="h4 timeline-item-title">IT Proger: Unity GameDev</h4>
+                <h4 lang="en" class="h4 timeline-item-title">IT Proger: Unity GameDev</h4>
+                <h4 lang="ru" class="h4 timeline-item-title">IT Proger: Unity Разработчик</h4>
   
                 <span>2022</span>
               </li>
@@ -530,31 +663,40 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 lang="en" class="h3">Education</h3>
+            <h3 lang="ru" class="h3">Образование</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Far Eastern State Transport University</h4>
+              <h4 lang="en" class="h4 timeline-item-title">Far Eastern State Transport University</h4>
+              <h4 lang="ru" class="h4 timeline-item-title">Дальневосточный государственный университет путей сообщения</h4>
+              
+              <span>2023 — Текущее время</span>
 
-              <span>2023 — Present</span>
-
-              <p class="timeline-text">
+              <p lang="en" class="timeline-text">
                 Master's Degree in Computer Science.
+              </p>
+              <p lang="ru" class="timeline-text">
+                Магистратура по специальности "Информатика и вычислительная техника".
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Far Eastern State Transport University</h4>
+              <h4 lang="en" class="h4 timeline-item-title">Far Eastern State Transport University</h4>
+              <h4 lang="ru" class="h4 timeline-item-title">Дальневосточный государственный университет путей сообщения</h4>
 
               <span>2019 — 2023</span>
 
-              <p class="timeline-text">
+              <p lang="en" class="timeline-text">
                 Bachelor's Degree in Computer Science.
+              </p>
+              <p lang="ru" class="timeline-text">
+                Бакалавриат по специальности "Информатика и вычислительная техника".
               </p>
 
             </li>
@@ -767,6 +909,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <!--
     - ionicon link
