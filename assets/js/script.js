@@ -152,37 +152,32 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-window.onload = function(){
+document.addEventListener('DOMContentLoaded', function() {
   setLocalization();
-};
+});
 
 var currentLanguage = "en";
 
 // Function to set localization at the start
 function setLocalization() {
-
-  // Call select_language with user's preferred language or default language
-  var userLang = navigator.language || navigator.userLanguage;
-  var langCode = userLang[0]+userLang[1];
-  if (langCode != "en" && langCode!="ru"){
-    userLang = currentLanguage;
-  }
-  select_language(userLang);
-
-  // Ensure localization resources are loaded
-  // (e.g., by fetching translation files asynchronously)
+    // Call select_language with user's preferred language or default language
+    var userLang = navigator.language || navigator.userLanguage;
+    var langCode = userLang.substring(0, 2);
+    if (langCode !== "en" && langCode !== "ru") {
+        userLang = currentLanguage;
+    }
+    select_language(userLang);
 }
 
 function select_language(language) {
-  $("[lang]").each(function () {
-      var langCode = language[0]+language[1];
-      if (langCode == $(this).attr("lang")){
-        $(this).show();
-      }
-      else{
-        $(this).hide();
-      }
-  });
+    $("[lang]").each(function () {
+        var langCode = language.substring(0, 2);
+        if (langCode === $(this).attr("lang")) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+    });
 }
 
 var langButton = document.getElementById("langButton")
