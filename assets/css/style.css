@@ -1901,12 +1901,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .social-list { justify-content: center; }
-
-
-
   /**
 	 * RESUME
 	 */
 
   .timeline-text { max-width: 700px; }
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: flex-start; /* Распределяет изображения равномерно по горизонтали */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tech-icon {
+width: 80px;
+height: 80px;
+object-fit: cover;
 }
